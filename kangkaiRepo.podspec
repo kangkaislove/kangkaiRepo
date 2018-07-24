@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name         = "kangkaiRepo"        #名称
-s.version      = "0.0.3"              #版本号
+s.version      = "0.0.4"              #版本号
 s.summary      = "this pod only use to test."       #简短介绍
 s.description  = <<-DESC
                               这是我用来做私有Pods测试的，所以随便写点什么的。
