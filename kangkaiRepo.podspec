@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name         = "kangkaiRepo"        #名称
-s.version      = "0.0.2"              #版本号
+s.version      = "0.0.3"              #版本号
 s.summary      = "this pod only use to test."       #简短介绍
 s.description  = <<-DESC
                               这是我用来做私有Pods测试的，所以随便写点什么的。
@@ -27,7 +27,7 @@ s.author             = { "kangkai" => "214525789@qq.com" }
 ## 这里不支持ssh的地址，只支持HTTP和HTTPS，最好使用HTTPS
 ## 正常情况下我们会使用稳定的tag版本来访问，如果是在开发测试的时候，不需要发布release版本，直接指向git地址使用
 ## 待测试通过完成后我们再发布指定release版本，使用如下方式
-s.source       = { :git => "https://github.com/kangkaislove/kangkaiRepo.git", :tag => s.version.to_s}
+s.source       = { :git => "https://github.com/kangkaislove/kangkaiRepo.git", :tag => s.version}
 
 s.platform     = :ios, "9.0"          #支持的平台及版本，这里我们呢用swift，直接上9.0
 s.requires_arc = true                 #是否使用ARC
