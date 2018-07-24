@@ -17,14 +17,17 @@ s.description  = <<-DESC
 
 s.homepage     = "https://github.com/kangkaislove/kangkaiRepo"
 # s.screenshots  = "www.example.com/screenshots_1.gif"
-s.license      = "MIT"                #开源协议
+s.license      = { :type => 'MIT', :text => <<-LICENSE
+                    Copyright 2017 KangKai
+                    LICENSE
+                    }
 s.author             = { "kangkai" => "214525789@qq.com" }
 
 #s.source       = { :git => "https://github.com/kangkaislove/kangkaiRepo.git" }
 ## 这里不支持ssh的地址，只支持HTTP和HTTPS，最好使用HTTPS
 ## 正常情况下我们会使用稳定的tag版本来访问，如果是在开发测试的时候，不需要发布release版本，直接指向git地址使用
 ## 待测试通过完成后我们再发布指定release版本，使用如下方式
-s.source       = { :git => "http://EXAMPLE/kangkaiRepo.git", :tag => '0.0.2'}
+s.source       = { :git => "https://github.com/kangkaislove/kangkaiRepo.git", :tag => s.version.to_s}
 
 s.platform     = :ios, "9.0"          #支持的平台及版本，这里我们呢用swift，直接上9.0
 s.requires_arc = true                 #是否使用ARC
